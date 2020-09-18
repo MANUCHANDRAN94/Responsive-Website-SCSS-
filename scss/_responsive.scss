@@ -1,0 +1,133 @@
+// responsive for medium screen
+@include media-md {
+  .landing-page {
+    header {
+      align-self: flex-start;
+    }
+    overflow: hidden;
+    .container {
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    .logo-img {
+      width: 15em;
+    }
+    .banner-background {
+      visibility: visible !important;
+      height: 500px;
+      width: 600px;
+      margin-left: -2em;
+      visibility: visible;
+      background-size: cover;
+      background-position: top;
+      background-position-y: -25px;
+      background-image: url(../Assets/banner-text-bg.svg);
+      @include flex-column-evenly;
+    }
+  }
+
+  #network .row {
+    margin-top: 1em;
+    flex-direction: row !important;
+    .left,
+    .right {
+      width: 50%;
+    }
+  }
+
+  .process-heading {
+    text-align: center;
+  }
+
+  #process {
+    .row {
+      @include flex-row-round;
+      align-items: baseline;
+
+      article {
+        width: 30%;
+      }
+    }
+    .perks{
+       h3{
+           text-align: center;
+       }
+       .hide{
+           visibility: visible;
+       }
+    }
+  }
+  
+  footer{
+      .row{
+          flex-direction: row !important;
+          justify-content: space-between !important;
+          .left , .right{
+              width: 45%;
+          } 
+          .right{
+              text-align: end;
+          }
+      }
+  }
+}
+
+
+// for large screen
+
+@include media-lg {
+    #landing-page.landing-page .container{
+        align-items: flex-start ;
+        font-size: 14px;
+    }
+    #landing-page {
+        @include set-background-image((linear-gradient(
+        rgba($primary-font-color, 0.1),
+        rgba($primary-font-color, 0.1)
+      ),
+      url('../Assets/main\ img.jpg'))
+    );
+        .logo-img{
+            width: 16em;
+        }
+        .banner-background{
+            height: 500px;
+            width: 550px ;
+
+            p{
+                margin: .7em 0 .9em;
+            }
+        }
+    }
+
+    .network{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .design1{
+           @include background-design("../Assets/right\ network.svg");
+           background-position-x:right ;
+           top: 0px;
+           right: 6px;
+        }
+        .design2{
+            @include background-design("../Assets/your-rewards-2.svg");
+            height: 49%;
+            bottom: -15px;
+            left: 0px;
+            background-position-y: bottom;
+         }
+         .design3{
+            @include background-design("../Assets/bring-value-to-your-network.svg");
+            bottom: -425px;
+            background-position-y: bottom;
+         }
+    }
+    #process{
+      background-position-y: -10px !important;
+    }
+}

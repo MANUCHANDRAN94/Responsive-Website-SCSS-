@@ -1,0 +1,216 @@
+// imported scss
+@import 'config';
+@import 'utilites';
+@import 'responsive';
+
+
+// Mobile view
+body{
+    color: set-text-color(#fff);
+    line-height: 1.4;
+    @include set-font(300);
+}
+
+// Landing screen
+.landing-page{
+    height: 100vh;
+    @include set-background-image((linear-gradient(
+        rgba($primary-font-color, 0.9),
+        rgba($primary-font-color, 0.8)
+      ),
+      url('../Assets/main\ img.jpg'))
+    );
+    .container{
+        @include flex-column-evenly;
+    }
+    .logo-img{
+        width: 12em;
+    }
+    .banner-background{
+        visibility: hidden;
+    }
+    .banner-content{
+        visibility: visible;
+    }
+    p{  margin: 1.7em 0;
+        font-size: 1.5em;
+        color: darken(#fff , 25%);
+    }
+
+}
+
+
+// Network section
+#network {
+    .row{
+        @include flex-column-evenly;
+    }
+    .row2{ flex-direction: column-reverse;}
+    .left , .right{
+        padding: .7em 0;
+    }
+    img{
+        width: 85%;
+    }
+}
+
+// Process section
+#process{
+    @include set-background-image((linear-gradient(
+        rgba(#f3f3f3, 0),
+        rgba(#FFF6F3, 1)
+      ),
+      url('../Assets/does\ it\ Work\ br.png'))
+    );
+
+    color: set-text-color(lighten(#FFF6F3 , 100));
+    text-align: left;
+
+    article{
+        &:hover{
+            .card{
+               @include set-color-hover;
+                padding-left: 1em;
+                padding-bottom: 3em;
+                border-radius: 5%;
+            }
+        }
+        .card{
+            padding: 1em 1em 1em 0;
+        }
+        h5{
+            @include set-font(800);
+            font-size: 1.1em;
+        }
+        img{
+            max-width:20vw ;
+            margin-top: 1em;
+        }
+    }
+
+    h3{
+        margin: .5em 0;
+    }
+    .left , .right{
+        p{  
+            padding: 1em 0;
+            font-size: .9em;
+        }
+    }
+}
+
+// Contact section
+.about{
+    background-image: url(../Assets/contact-form-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: darken($color: #fff, $amount: 15);
+    text-align: center;
+
+    h4{
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+    @include flex-column-evenly;
+    &-form{
+        max-width: 600px;
+        margin: auto;
+        input{
+            width: 95%;
+            margin: 2em auto;
+            padding-top: .2em;
+            padding-bottom: 1.7em;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 3px solid lighten($primary-font-color ,25);
+            &::placeholder{
+                color: rgb(240, 230, 230);
+                font-size: 1.2em;
+                background-repeat: no-repeat;
+                text-indent: 35px;
+            }
+            &:focus{
+                border-bottom-color: rgb(38, 38, 231);
+            }
+        }
+        @mixin input-image-set($id , $url){
+            #{$id}{
+                &::placeholder{
+                    background-image: url($url);
+                }
+            }
+        }
+
+        @include input-image-set("#username" , '/Assets/name.svg');
+        @include input-image-set("#email" , '/Assets/email.svg');
+        @include input-image-set("#linkedin" , '/Assets/linkedin.svg');
+
+        p{  margin: 1em 0 3em;
+            color: darken(#fff , 25%);
+        }
+    }
+
+}
+
+// FAQ section
+#faq{
+    h2{
+        font-family: $faq-font;
+        font-size: 2.2em;
+    }
+
+    .faq-ques{
+        h6{
+            font-size: 1.2em;
+            font-weight: 700;
+            color: lighten($color: #000000, $amount: 40);
+            padding: .6em 0;
+            width: 80%;
+        }
+        p{
+            margin: .4em 0;
+            display: none;
+            color: $hovor-color;
+        }
+        .row{
+            position: relative;
+            border-bottom: 1.5px solid lighten($primary-font-color, 50);
+            .toggler{
+                position: absolute;
+                top: 15px;
+                right: 5px;
+            }
+            .toggle2 , .toggle1{
+                display: none;
+            }
+            
+            .active{
+                display: inline;
+            }
+            
+        }
+    }
+}
+
+// Footer
+footer{
+    .row{
+        @include flex-column-evenly;
+        padding-bottom: 2em;
+        a{
+            text-decoration: none;
+            color:lighten($primary-font-color, 30) ;
+        }
+        .vertical-line{
+            display: inline-block;
+            width: 2px;
+            height: 14px;
+            margin:0 .3em;
+            background-color: rgb(158, 172, 180);
+        }
+        span{
+            color: $hovor-color;
+        }
+    }
+}

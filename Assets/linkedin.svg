@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="18px" viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>linkedin</title>
+    <g id="linkedin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-25" transform="translate(7.281089, 9.111216) rotate(-30.000000) translate(-7.281089, -9.111216) translate(3.781089, 0.611216)" stroke="#6D7B9C" stroke-width="2.16">
+            <circle id="Oval-15" fill="#36425D" cx="3.672" cy="3.24" r="3.24"></circle>
+            <circle id="Oval-15-Copy" fill="#36425D" cx="3.672" cy="13.608" r="3.24"></circle>
+            <line x1="0.648" y1="4.104" x2="0.648" y2="11.448" id="Line-9" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

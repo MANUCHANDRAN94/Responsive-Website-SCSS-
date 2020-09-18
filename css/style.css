@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-weight: 700;
+  font-size: 3.2em; }
+
+h2, h3, h4, h5 {
+  font-weight: 700;
+  font-size: 1.4em; }
+
+h2, h3 {
+  font-size: 1.8em; }
+
+.container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto; }
+
+.section-padding {
+  padding: 3em 0; }
+
+.process-heading {
+  text-align: left;
+  margin: .5em auto 1.5em; }
+  .process-heading .heading {
+    margin-bottom: .5em; }
+  .process-heading .sub-heading {
+    margin: 0 0 1em; }
+
+.hide {
+  visibility: hidden; }
+
+button {
+  width: 11em;
+  height: 2.7em;
+  font-size: 1.2em;
+  border: none;
+  font-weight: 700;
+  border-radius: 40px; }
+  button img {
+    margin-left: .7em;
+    padding-top: 2px; }
+  button:hover {
+    transform: scale(1.1);
+    background-color: #FF6E43;
+    color: #fff; }
+
+@media screen and (min-width: 678px) {
+  .landing-page {
+    overflow: hidden; }
+    .landing-page header {
+      align-self: flex-start; }
+    .landing-page .container {
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left; }
+    .landing-page h1 {
+      font-size: 3em; }
+    .landing-page .logo-img {
+      width: 15em; }
+    .landing-page .banner-background {
+      visibility: visible !important;
+      height: 500px;
+      width: 600px;
+      margin-left: -2em;
+      visibility: visible;
+      background-size: cover;
+      background-position: top;
+      background-position-y: -25px;
+      background-image: url(../Assets/banner-text-bg.svg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+  #network .row {
+    margin-top: 1em;
+    flex-direction: row !important; }
+    #network .row .left,
+    #network .row .right {
+      width: 50%; }
+  .process-heading {
+    text-align: center; }
+  #process .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: baseline; }
+    #process .row article {
+      width: 30%; }
+  #process .perks h3 {
+    text-align: center; }
+  #process .perks .hide {
+    visibility: visible; }
+  footer .row {
+    flex-direction: row !important;
+    justify-content: space-between !important; }
+    footer .row .left, footer .row .right {
+      width: 45%; }
+    footer .row .right {
+      text-align: end; } }
+
+@media screen and (min-width: 900px) {
+  #landing-page.landing-page .container {
+    align-items: flex-start;
+    font-size: 14px; }
+  #landing-page {
+    background: linear-gradient(rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.1)), url("../Assets/main img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center; }
+    #landing-page .logo-img {
+      width: 16em; }
+    #landing-page .banner-background {
+      height: 500px;
+      width: 550px; }
+      #landing-page .banner-background p {
+        margin: .7em 0 .9em; }
+  .network {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .network .design1 {
+      position: absolute;
+      width: 80%;
+      height: 70%;
+      background-image: url("../Assets/right network.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      background-position-x: right;
+      top: 0px;
+      right: 6px; }
+    .network .design2 {
+      position: absolute;
+      width: 80%;
+      height: 70%;
+      background-image: url("../Assets/your-rewards-2.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      height: 49%;
+      bottom: -15px;
+      left: 0px;
+      background-position-y: bottom; }
+    .network .design3 {
+      position: absolute;
+      width: 80%;
+      height: 70%;
+      background-image: url("../Assets/bring-value-to-your-network.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      bottom: -425px;
+      background-position-y: bottom; }
+  #process {
+    background-position-y: -10px !important; } }
+
+body {
+  color: #343434;
+  line-height: 1.4;
+  font-family: "Almarai", sans-serif;
+  font-weight: 300; }
+
+.landing-page {
+  height: 100vh;
+  background: linear-gradient(rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.8)), url("../Assets/main img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center; }
+  .landing-page .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .landing-page .logo-img {
+    width: 12em; }
+  .landing-page .banner-background {
+    visibility: hidden; }
+  .landing-page .banner-content {
+    visibility: visible; }
+  .landing-page p {
+    margin: 1.7em 0;
+    font-size: 1.5em;
+    color: #bfbfbf; }
+
+#network .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+#network .row2 {
+  flex-direction: column-reverse; }
+
+#network .left, #network .right {
+  padding: .7em 0; }
+
+#network img {
+  width: 85%; }
+
+#process {
+  background: linear-gradient(rgba(243, 243, 243, 0), #fff6f3), url("../Assets/does it Work br.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  color: #343434;
+  text-align: left; }
+  #process article:hover .card {
+    background-color: #FF6E43;
+    color: #fff;
+    padding-left: 1em;
+    padding-bottom: 3em;
+    border-radius: 5%; }
+  #process article .card {
+    padding: 1em 1em 1em 0; }
+  #process article h5 {
+    font-family: "Almarai", sans-serif;
+    font-weight: 800;
+    font-size: 1.1em; }
+  #process article img {
+    max-width: 20vw;
+    margin-top: 1em; }
+  #process h3 {
+    margin: .5em 0; }
+  #process .left p, #process .right p {
+    padding: 1em 0;
+    font-size: .9em; }
+
+.about {
+  background-image: url(../Assets/contact-form-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #d9d9d9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .about h4 {
+    font-size: 1.4em;
+    font-weight: 400; }
+  .about-form {
+    max-width: 600px;
+    margin: auto; }
+    .about-form input {
+      width: 95%;
+      margin: 2em auto;
+      padding-top: .2em;
+      padding-bottom: 1.7em;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 3px solid #676767; }
+      .about-form input::placeholder {
+        color: #f0e6e6;
+        font-size: 1.2em;
+        background-repeat: no-repeat;
+        text-indent: 35px; }
+      .about-form input:focus {
+        border-bottom-color: #2626e7; }
+    .about-form #username::placeholder {
+      background-image: url("/Assets/name.svg"); }
+    .about-form #email::placeholder {
+      background-image: url("/Assets/email.svg"); }
+    .about-form #linkedin::placeholder {
+      background-image: url("/Assets/linkedin.svg"); }
+    .about-form p {
+      margin: 1em 0 3em;
+      color: #bfbfbf; }
+
+#faq h2 {
+  font-family: "Viga", sans-serif;
+  font-size: 2.2em; }
+
+#faq .faq-ques h6 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #666666;
+  padding: .6em 0;
+  width: 80%; }
+
+#faq .faq-ques p {
+  margin: .4em 0;
+  display: none;
+  color: #FF6E43; }
+
+#faq .faq-ques .row {
+  position: relative;
+  border-bottom: 1.5px solid #a7a7a7; }
+  #faq .faq-ques .row .toggler {
+    position: absolute;
+    top: 15px;
+    right: 5px; }
+  #faq .faq-ques .row .toggle2, #faq .faq-ques .row .toggle1 {
+    display: none; }
+  #faq .faq-ques .row .active {
+    display: inline; }
+
+footer .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2em; }
+  footer .row a {
+    text-decoration: none;
+    color: #747474; }
+  footer .row .vertical-line {
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    margin: 0 .3em;
+    background-color: #9eacb4; }
+  footer .row span {
+    color: #FF6E43; }
+/*# sourceMappingURL=style.css.map */
