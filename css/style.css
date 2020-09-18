@@ -92,6 +92,8 @@ button {
     align-items: baseline; }
     #process .row article {
       width: 30%; }
+  #process .perks .left, #process .perks .right {
+    width: 45%; }
   #process .perks h3 {
     text-align: center; }
   #process .perks .hide {
