@@ -269,11 +269,11 @@ body {
       .about-form input:focus {
         border-bottom-color: #2626e7; }
     .about-form #username::placeholder {
-      background-image: url("/Assets/name.svg"); }
+      background-image: url("../Assets/name.svg"); }
     .about-form #email::placeholder {
-      background-image: url("/Assets/email.svg"); }
+      background-image: url("../Assets/email.svg"); }
     .about-form #linkedin::placeholder {
-      background-image: url("/Assets/linkedin.svg"); }
+      background-image: url("../Assets/linkedin.svg"); }
     .about-form p {
       margin: 1em 0 3em;
       color: #bfbfbf; }
