@@ -142,9 +142,9 @@ body{
             }
         }
 
-        @include input-image-set("#username" , '/Assets/name.svg');
-        @include input-image-set("#email" , '/Assets/email.svg');
-        @include input-image-set("#linkedin" , '/Assets/linkedin.svg');
+        @include input-image-set("#username" , '../Assets/name.svg');
+        @include input-image-set("#email" , '../Assets/email.svg');
+        @include input-image-set("#linkedin" , '../Assets/linkedin.svg');
 
         p{  margin: 1em 0 3em;
             color: darken(#fff , 25%);
